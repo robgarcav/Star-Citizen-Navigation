@@ -2,6 +2,7 @@ const electron = require('electron')
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 
+console.log("ADADSADADSAD");
 
 function createWindow() {
   window = new BrowserWindow({
@@ -27,6 +28,7 @@ function createWindow() {
       window = null
   })
 }
+console.log("ASDASDAD");
 
 app.on('ready', createWindow)
 

@@ -66,3 +66,8 @@ Either send me a pm at Valalol#1790 on Discord or go to the github repository (h
 
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
 
+
+
+## TODO
+Migrate the Map tool to Electron
+Sync Map with server and DB to display multiple users location

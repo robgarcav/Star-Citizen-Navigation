@@ -1,6 +1,6 @@
 #Made by Valalol#1790
 #First release 16/04/2021
-
+print("ASDQDADADASD")
 #Imports
 from math import sqrt, degrees, radians, cos, acos, sin, asin, tan ,atan2, copysign, pi
 import pyperclip
@@ -1567,5 +1567,5 @@ while True:
 
 
 # Hurston : Coordinates: x:12850457093 y:0 z:0
-# Microtech : Coordinates: x:22462016306.0103 y:37185625645.8346 z:0
+# Microtech : Coordinates: x:22455016306.0103 y:37185625645.8346 z:0
 # Daymar : Coordinates: x:-18930439540 y:-2610058765 z:0

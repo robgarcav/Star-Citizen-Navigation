@@ -1,13 +1,15 @@
+console.error("ADASADASDADA");
 let { PythonShell } = require('python-shell')
-
-window.resizeTo(350,119)
+console.log("asdadsads");
+window.resizeTo(450,200);
 
 var Mode = ""
 
 let pyshell = new PythonShell('backend.py')
 
-error_message = "Something Wrong Happened. \nPlease see the error below \nIf anything shows up please report the issue to Valalol#1790 on Discord"
+document.getElementById("Loading").style.display = "none";
 
+error_message = "Something Wrong Happened. \nPlease see the error below \nIf anything shows up please report the issue to Valalol#1790 on Discord"
 pyshell.on('stderr', function (stderr) {
     console.log(stderr)
     window.resizeTo(350,850)
@@ -168,4 +170,20 @@ pyshell.on('message', (message) => {
     }
 })
 
+function planetaryNavigationEnabled(){
+    if (document.getElementById("planetary_Navigation_options").style.display == "none"){
+        document.getElementById("planetary_Navigation_options").style.display = "block";
+        window.resizeTo(450,400);
+    }else {
+        document.getElementById("planetary_Navigation_options").style.display = "none";
+        window.resizeTo(450,200);
+    }
+    console.log("Succefully updated the GUI")
+}
+
+function containerSelected(elementId){
+    const containerName = document.getElementById(elementId).textContent;
+    console.log(containerName);
+    document.getElementById("planetary_navigation_destination_placeholder").textContent = containerName;
+}
 

@@ -13,7 +13,51 @@
 
 <body>
     <div id="Loading" class="mode_div">
-        <h1>Waiting for Mode and Target to be selected</h1>
+        <h1>Waiting for Mode and Target to be selectedladlkjsad</h1>
+        <img id="loading_status_icon" class="status_icon" src="Images/green_dot.png">
+        <label id="loading_status_message" class="status_message"></label>
+        <code id="loading_error_message" class="error_message"></code>
+
+    </div>
+    <div id="Testing" class="mode_div2">
+        <h1>Navigation Console</h1>
+        <div id="buttons_div" class="buttons_div">
+            <div id="button_box" class="button_box" onclick="planetaryNavigationEnabled()">
+                Planetary Navigation
+            </div>
+            <div id="button_box" class="button_box">
+                Space Navigation
+            </div>
+            <div id="button_box" class="button_box">
+                Companion
+            </div>
+            <div id="button_box" class="button_box">
+                Race Assist
+            </div>
+
+        </div>
+        <br>
+        <div id="planetary_Navigation_options" class="buttons_div">
+            <div id="button_box" class="button_box">
+                
+                <div class="dropdown">
+                    <p id="planetary_navigation_destination_placeholder">Container Dropdown</p>
+                    <div class="dropdown-content">
+                      <p href="#" id="t1" onclick="containerSelected(this.id)">Hurston</p>
+                      <p href="#" id="t2" onclick="containerSelected(this.id)">Aberdeen</p>
+                      <p href="#" id="t3" onclick="containerSelected(this.id)">Euterpe</p>
+                    </div>
+                  </div>
+            </div>
+            <div id="button_box" class="button_box">
+                Known POI
+            </div>
+            <div id="button_box" class="button_box">
+                Custom POI
+            </div>
+
+        </div>
+        
         <img id="loading_status_icon" class="status_icon" src="Images/green_dot.png">
         <label id="loading_status_message" class="status_message"></label>
         <code id="loading_error_message" class="error_message"></code>
